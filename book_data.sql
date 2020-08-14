@@ -41,3 +41,17 @@ INSERT INTO books
  
  
 SELECT title FROM books;
+
+CREATE TABLE items(price DECIMAL(5,3));
+ 
+INSERT INTO items(price) VALUES(7);
+ 
+INSERT INTO items(price) VALUES(7987654);
+ 
+INSERT INTO items(price) VALUES(34.88);
+ 
+INSERT INTO items(price) VALUES(298.9999);
+ 
+INSERT INTO items(price) VALUES(1.9999);
+ 
+SELECT * FROM items;
