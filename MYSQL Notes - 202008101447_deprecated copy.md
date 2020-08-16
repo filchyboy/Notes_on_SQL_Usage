@@ -180,7 +180,7 @@ In order to retrieve specific data within a specific column & row use the `WHERE
 
 ### Ease of Use with Aliases
 
-In order to simplify queries employ aliases. Aliases can be generated as follows: `SELECT column_name AS name FROM tablename WHERE variable=target;`. The results will temporarily render `column_name` as `name` which can be useful during more complicated queries such as a `JOIN`, `SET`, or `CASE`, for example.
+In order to simplify queries employ aliases. Aliases can be generated as follows: `SELECT column_name AS name FROM tablename WHERE variable=target;`. The results will temporarily render `column_name` as `name` which can be useful during more complicated queries such as a `JOIN`.
 
 ### Update Existing Data
 
