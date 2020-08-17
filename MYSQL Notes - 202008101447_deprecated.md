@@ -362,6 +362,8 @@ Example in code:
 	
 Note the use of an alias with `AS`. This is an example of using a `LEFT JOIN` to find `customers.id` which DID NOT place orders. Measuring absence.
 
+Also notice the use of `IFNULL` which searches for `NULL` values and allows for replacing them. So, in this instance, above `IFNULL(SUM(amount), 0) AS total_spent`: is checking to see if `SUM(amount)` contains any `NULL` values and if any cell in that column contains `NULL` it is replaced by a `0`.
+
 #### Right Join
 
 Helpful Diagram:
@@ -382,11 +384,7 @@ Example in code:
 	
 As before, this is used to find data missing from the `PRIMARY KEY` table.
 
-
-
-
-
-
+Note that `RIGHT JOIN` & `LEFT JOIN` are functionally the same. You can use either one and simply switch the order in which you give it tables. So for all intensive purposes it probably makes sense to just use `LEFT JOINS` as those are more conventional than `RIGHT JOINS`. Notice again the use of `IFNULL` above where `MISSING` & `USER` are placed instead of `NULL`.
 
 
 
